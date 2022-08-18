@@ -1,0 +1,23 @@
+{
+    "blogs" : [
+        {
+            "body": "lorem ipsum",
+            "title": "my new website",
+              "author": "Saolat", 
+              "id": 1
+        },
+        {
+            "body": "lorem ipsum...",
+            "title": "Welcome party",
+            "author": "Chopmanbaby",
+               "id": 2
+        },
+        {
+            "body": "lorem ipsum...",
+            "title": "web dev top tips",
+            "author": " Saolat",
+               "id": 3
+        }
+
+    ]
+}
