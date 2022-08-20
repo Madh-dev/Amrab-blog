@@ -1,23 +1,34 @@
 {
-    "blogs" : [
-        {
-            "body": "lorem ipsum",
-            "title": "my new website",
-              "author": "Saolat", 
-              "id": 1
-        },
-        {
-            "body": "lorem ipsum...",
-            "title": "Welcome party",
-            "author": "Chopmanbaby",
-               "id": 2
-        },
-        {
-            "body": "lorem ipsum...",
-            "title": "web dev top tips",
-            "author": " Saolat",
-               "id": 3
-        }
-
-    ]
+  "blogs": [
+    {
+      "body": "lorem ipsum",
+      "title": "my new website",
+      "author": "Amrab",
+      "id": 1
+    },
+    {
+      "body": "lorem ipsum...",
+      "title": "Welcome party",
+      "author": "Abdulmalik",
+      "id": 2
+    },
+    {
+      "title": "How to develop Yourself",
+      "body": "Amrab Concept is the one of the leading educational site u you can use",
+      "author": "Wadudah",
+      "id": 4
+    },
+    {
+      "title": "Mini-Import Bootcamp 1.0",
+      "body": "Become a serial importreneur\nA 1 month intensive training on Mini Importation Mastery to be done in JULY\nPRICE WILL BE #4-5K.\nYou will be taught the ins and out of mini importation business and e-commerce to enhance and boost your business.",
+      "author": "Amrab",
+      "id": 5
+    },
+    {
+      "title": "Graphics Beginners Course",
+      "body": "Hi, welcome to the graphics beginner's course where you will be learning how to design using various design tools from the simplest",
+      "author": "Trust Digital",
+      "id": 6
+    }
+  ]
 }

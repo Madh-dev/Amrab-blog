@@ -7,28 +7,37 @@ const useHook = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(url)
-            .then(res => {
-                if (!res.ok) {
-                    throw Error("The resource couldn't be fetch");
-                }
-                return res.json();
-            })
-            .then(data => {
+        const abortCont = new AbortController();
 
-                setData(data);
-                setLoads(false);
-                setError(null);
-            })
-            .catch((err) => {
-                setError(err.message);
-                console.log(err.message);
-                setLoads(false);
-            })
+        setTimeout(() => {
+            fetch(url, { signal: abortCont.signal })
+                .then(res => {
+                    if (!res.ok) {
+                        throw Error("The resource couldn't be fetch");
+                    }
+                    return res.json();
+                })
+                .then(data => {
+
+                    setData(data);
+                    setLoads(false);
+                    setError(null);
+                })
+                .catch(err => {
+                    if (err.name === 'AbortError') {
+                        console.log('fetch aborted');
+                    } else {
+                        setError(err.message);
+                        setLoads(false);
+                    }
+                })
+        }, 1000);
+
+        return () => abortCont.abort();
     },
         [url]);
 
-        return {data, load,error};
+    return { data, load, error };
 
 }
 

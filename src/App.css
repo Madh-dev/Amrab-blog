@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand";
+  color: #063748;
 }
 .navbar{
   padding: 20px;
@@ -12,11 +13,12 @@
   align-items: center;
   max-width: 600px;
   margin: 0;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #bbdefb; /*#f2f2f2*/
 
 }
 .navbar h1{
-    color: #f1356d;
+   /* color: #f1356d;*/
+   color: #0ea0bd;
 }
 .navbar .links{
   margin-left: auto;
@@ -27,7 +29,8 @@
   padding: 6px;
 }
 .navbar a:hover{
-  color: #f1356d;
+  color: #0ea0bd;
+  font-weight: 700;
 }
 .content{
   max-width: 600px;
@@ -39,6 +42,74 @@
 }
 .blog-preview h2{
   font-size: 20px;
-  color: #f1356d;
+  color: #0ea0bd;
   margin-bottom: 6px;
 }
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-details h2{
+  font-size: 20px;
+  color:#0ea0bd;
+  margin-bottom: 10px;
+}
+.blog-details div{
+  margin: 20px 0;
+}
+.blog-details button{
+  background: #0ea0bd;
+  color:#fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create
+ {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+ }
+ .create label{
+  text-align: left;
+  display: block;
+ }
+ .create h2 {
+  font-size: 20px;
+  color: #0ea0bd;
+  margin-bottom: 30px;
+ }
+ .create input, .create textarea, .create select{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+ }
+ .create button{
+  background: #0ea0bd;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+ }
+ .not-found{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
+ .not-found a{
+  text-decoration: none;
+  color:#fff;
+  background: #0ea0bd;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+ }

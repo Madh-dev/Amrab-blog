@@ -9,7 +9,7 @@ function Home() {
     // <BlogList blogs={blogs.filter((blog) => blog.author === 'Saolat' )} title= "Saolat's blogs" /> 
     return (
         <div className='home'>
-            <div>{error}</div>
+            {error && <div>{error}</div> }
             {load && <div>loading....</div>}
           {blogs &&  <BlogList blogs={blogs} title="All blogs!" />}
 
